@@ -21,40 +21,20 @@ public class Ticket implements Comparable<Ticket> {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public float getCost() {
         return cost;
-    }
-
-    public void setCost(float cost) {
-        this.cost = cost;
     }
 
     public String getFromAirport() {
         return fromAirport;
     }
 
-    public void setFromAirport(String departureAirport) {
-        this.fromAirport = departureAirport;
-    }
-
     public String getToAirport() {
         return toAirport;
     }
 
-    public void setToAirport(String arrivalAirport) {
-        this.toAirport = arrivalAirport;
-    }
-
     public int getTravelTimeMinutes() {
         return travelTimeMinutes;
-    }
-
-    public void setTravelTimeMinutes(int travelTimeMinutes) {
-        this.travelTimeMinutes = travelTimeMinutes;
     }
 
     @Override
