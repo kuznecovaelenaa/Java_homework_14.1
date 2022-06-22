@@ -29,7 +29,7 @@ public class TicketManager {
     public Ticket[] findAll(String fromAirport, String toAirport) {
         Ticket[] ans = new Ticket[0];
         for (Ticket ticket : repository.tickets) {
-            if (ticket.getToAirport() == toAirport && ticket.getFromAirport() == fromAirport) {
+            if (ticket.getToAirport().equals(toAirport) && ticket.getFromAirport().equals(fromAirport)) {
                 Ticket[] tmp = new Ticket[ans.length + 1];
                 for (int i = 0; i < ans.length; i++) {
                     tmp[i] = ans[i];
